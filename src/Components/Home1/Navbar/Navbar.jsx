@@ -312,7 +312,7 @@ function Navbar() {
             flex flex-col fixed xs:block lg:hidden left-0 right-0 top-[70px] sm:top-[70px] py-5 px-5 z-50 bg-white w-[100%] text-main-color-1 gap-7 font-normal text-md`}
         >
           <li className="flex w-[100%] overflow-hidden items-start flex-col justify-start gap-1 cursor-pointer">
-            Home
+            <NavLink to="/">Home</NavLink>
           </li>
           <li
             className={`${
@@ -455,35 +455,35 @@ function Navbar() {
               <li
                 className={`flex w-[100%] overflow-hidden items-start flex-col justify-start gap-1 cursor-pointer`}
               >
-                About
+                <NavLink to="about">About</NavLink>
               </li>
               <li
                 className={`flex w-[100%] overflow-hidden items-start flex-col justify-start gap-1 cursor-pointer`}
               >
-                Course
+                <NavLink to="course">Course</NavLink>
               </li>
               <li
                 className={`flex w-[100%] overflow-hidden items-start flex-col justify-start gap-1 cursor-pointer`}
               >
-                FAQ
+                <NavLink to="faq">FAQ</NavLink>
               </li>
               <li
                 className={`flex w-[100%] overflow-hidden items-start flex-col justify-start gap-1 cursor-pointer`}
               >
-                Pricing
+                <NavLink to="pricing">Pricing</NavLink>
               </li>
               <li
                 className={`flex w-[100%] overflow-hidden items-start flex-col justify-start gap-1 cursor-pointer`}
               >
-                Career
+                <NavLink to="career">Career</NavLink>
               </li>
             </ul>
           </li>
           <li className="flex w-[100%] overflow-hidden items-start flex-col justify-start gap-1 cursor-pointer">
-            Blog
+            <NavLink to="blog">Blog</NavLink>
           </li>
           <li className="flex w-[100%] overflow-hidden items-start flex-col justify-start gap-1 cursor-pointer">
-            Contact
+            <NavLink to="contact">Contact</NavLink>
           </li>
         </ul>
       ) : // </div>

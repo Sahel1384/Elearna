@@ -2,6 +2,7 @@ import navbarImg from "../../../assets/images/Home1/66c6fb8bf82fe9cef5f78d65_Ele
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { NavLink } from "react-router-dom";
 function Footer() {
   useEffect(() => {
     AOS.init({
@@ -27,13 +28,13 @@ function Footer() {
           <h1 className="text-white text-xl font-semibold">Quick links</h1>
           <ul className="flex flex-col gap-3">
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
-              Home
+              <NavLink to="/">Home</NavLink>
             </li>
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
-              Events
+              <NavLink to="/event">Events</NavLink>
             </li>
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
-              Career
+              <NavLink to="/career">Career</NavLink>
             </li>
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
               Instructor
@@ -61,22 +62,22 @@ function Footer() {
           <h1 className="text-white text-xl font-semibold">Company</h1>
           <ul className="flex flex-col gap-3">
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
-              About
+              <NavLink to="/about">About</NavLink>
             </li>
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
-              Courses
+              <NavLink to="/course">Courses</NavLink>
             </li>
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
-              Blog
+              <NavLink to="/blog">Blog</NavLink>
             </li>
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
-              Contact
+              <NavLink to="/contact">Contact</NavLink>
             </li>
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
               License
             </li>
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
-              Pricing
+              <NavLink to="/pricing">Pricing</NavLink>
             </li>
             <li className="text-[gray] text-md font-semibold hover:text-main-color-2 cursor-pointer duration-300">
               404
