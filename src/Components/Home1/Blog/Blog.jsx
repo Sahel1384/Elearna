@@ -11,6 +11,7 @@ import empl from "../../../assets/images/Home1/66d9685910e51570ad70d12e_Employ I
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { NavLink } from "react-router-dom";
 
 function Blog() {
   useEffect(() => {
@@ -37,111 +38,119 @@ function Blog() {
           </h1>
         </div>
       </div>
-      <div className="px-5 mt-32 grid grid-cols-1 xl:grid-cols-3">
+      <div className="px-5 gap-3 mt-32 grid grid-cols-1 xl:grid-cols-3">
         <div className="flex flex-col justify-start items-start w-full gap-8">
-          <div
-            data-aos="fade-up"
-            className="flex flex-col justify-center items-start gap-8 pb-10 w-full shadow-2xl"
-          >
-            <div>
-              <img
-                src={blog1}
-                className="xl:w-[430px] w-full object-cover"
-                alt=""
-              />
+          <NavLink to="/blog/blog1">
+            <div
+              data-aos="fade-up"
+              className="flex flex-col justify-center items-start gap-8 pb-10 w-full shadow-2xl"
+            >
+              <div>
+                <img
+                  src={blog1}
+                  className="xl:w-[430px] w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="px-8 flex gap-5">
+                <p className="text-sm text-[gray]">4.10.2024</p>
+                <p className="text-sm font-semibold">NINA NEFLER</p>
+              </div>
+              <div className="px-8">
+                <h1 className="text-xl md:text-2xl font-semibold">
+                  Improve knowledge retention with visual learning
+                </h1>
+              </div>
+              <div className="px-8">
+                <p className="text-md md:text-lg font-semibold text-[gray] leading-8">
+                  Lorem ipsum dolor sit amet consectetur. Enim turpis feugiat
+                  elementum sit ut. Cras mattis aliquam arcu mauris sagittis
+                  fames eu diam vulputate.
+                </p>
+              </div>
             </div>
-            <div className="px-8 flex gap-5">
-              <p className="text-sm text-[gray]">4.10.2024</p>
-              <p className="text-sm font-semibold">NINA NEFLER</p>
+          </NavLink>
+          <NavLink to="/blog/blog2">
+            <div
+              data-aos="fade-up"
+              className="flex flex-col justify-center items-start gap-8 pb-10 shadow-2xl "
+            >
+              <div>
+                <img src={blog2} className="w-[100vw]" alt="" />
+              </div>
+              <div className="px-8 flex gap-5">
+                <p className="text-sm text-[gray]">4.10.2024</p>
+                <p className="text-sm font-semibold">SAMANTHA DICKI</p>
+              </div>
+              <div className="px-8">
+                <h1 className="text-xl md:text-2xl font-semibold">
+                  Master online learning with proven strategies
+                </h1>
+              </div>
+              <div className="px-8">
+                <p className="text-md md:text-lg font-semibold text-[gray] leading-8">
+                  Lorem ipsum dolor sit amet consectetur. Enim turpis feugiat
+                  elementum sit ut. Cras mattis aliquam arcu mauris sagittis
+                  fames eu diam vulputate.
+                </p>
+              </div>
             </div>
-            <div className="px-8">
-              <h1 className="text-xl md:text-2xl font-semibold">
-                Improve knowledge retention with visual learning
-              </h1>
+          </NavLink>
+          <NavLink to="/blog/blog3">
+            <div
+              data-aos="fade-up"
+              className="flex flex-col justify-center items-start gap-8 pb-10 shadow-2xl w-full"
+            >
+              <div>
+                <img src={blog3} className="w-[100vw]" alt="" />
+              </div>
+              <div className="px-8 flex gap-5">
+                <p className="text-sm text-[gray]">3.10.2024</p>
+                <p className="text-sm font-semibold">EDWIN WATERS</p>
+              </div>
+              <div className="px-8">
+                <h1 className="text-xl md:text-2xl font-semibold">
+                  How to enhance your learning experience today
+                </h1>
+              </div>
+              <div className="px-8">
+                <p className="text-md md:text-lg font-semibold text-[gray] leading-8">
+                  Lorem ipsum dolor sit amet consectetur. Enim turpis feugiat
+                  elementum sit ut. Cras mattis aliquam arcu mauris sagittis
+                  fames eu diam vulputate.
+                </p>
+              </div>
             </div>
-            <div className="px-8">
-              <p className="text-md md:text-lg font-semibold text-[gray] leading-8">
-                Lorem ipsum dolor sit amet consectetur. Enim turpis feugiat
-                elementum sit ut. Cras mattis aliquam arcu mauris sagittis fames
-                eu diam vulputate.
-              </p>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="flex flex-col justify-center items-start gap-8 pb-10 shadow-2xl "
-          >
-            <div>
-              <img src={blog2} className="w-[100vw]" alt="" />
-            </div>
-            <div className="px-8 flex gap-5">
-              <p className="text-sm text-[gray]">4.10.2024</p>
-              <p className="text-sm font-semibold">SAMANTHA DICKI</p>
-            </div>
-            <div className="px-8">
-              <h1 className="text-xl md:text-2xl font-semibold">
-                Master online learning with proven strategies
-              </h1>
-            </div>
-            <div className="px-8">
-              <p className="text-md md:text-lg font-semibold text-[gray] leading-8">
-                Lorem ipsum dolor sit amet consectetur. Enim turpis feugiat
-                elementum sit ut. Cras mattis aliquam arcu mauris sagittis fames
-                eu diam vulputate.
-              </p>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="flex flex-col justify-center items-start gap-8 pb-10 shadow-2xl w-full"
-          >
-            <div>
-              <img src={blog3} className="w-[100vw]" alt="" />
-            </div>
-            <div className="px-8 flex gap-5">
-              <p className="text-sm text-[gray]">3.10.2024</p>
-              <p className="text-sm font-semibold">EDWIN WATERS</p>
-            </div>
-            <div className="px-8">
-              <h1 className="text-xl md:text-2xl font-semibold">
-                How to enhance your learning experience today
-              </h1>
-            </div>
-            <div className="px-8">
-              <p className="text-md md:text-lg font-semibold text-[gray] leading-8">
-                Lorem ipsum dolor sit amet consectetur. Enim turpis feugiat
-                elementum sit ut. Cras mattis aliquam arcu mauris sagittis fames
-                eu diam vulputate.
-              </p>
-            </div>
-          </div>
+          </NavLink>
         </div>
 
         <div className="flex flex-col justify-start items-start w-full gap-8">
-          <div
-            data-aos="fade-up"
-            className="flex flex-col justify-center items-start gap-8 pb-10 w-full shadow-2xl"
-          >
-            <div>
-              <img src={blog4} className="w-[100vw]" alt="" />
+          <NavLink to="/blog/blog4">
+            <div
+              data-aos="fade-up"
+              className="flex flex-col justify-center items-start gap-8 pb-10 w-full shadow-2xl"
+            >
+              <div>
+                <img src={blog4} className="w-[100vw]" alt="" />
+              </div>
+              <div className="px-8 flex gap-5">
+                <p className="text-sm text-[gray]">17.9.2024</p>
+                <p className="text-sm font-semibold">EDWARD BRAUN</p>
+              </div>
+              <div className="px-8">
+                <h1 className="text-xl md:text-2xl font-semibold">
+                  The evolution of teaching tools in the 21st century
+                </h1>
+              </div>
+              <div className="px-8">
+                <p className="text-md md:text-lg font-semibold text-[gray] leading-8">
+                  Lorem ipsum dolor sit amet consectetur. Enim turpis feugiat
+                  elementum sit ut. Cras mattis aliquam arcu mauris sagittis
+                  fames eu diam vulputate.
+                </p>
+              </div>
             </div>
-            <div className="px-8 flex gap-5">
-              <p className="text-sm text-[gray]">17.9.2024</p>
-              <p className="text-sm font-semibold">EDWARD BRAUN</p>
-            </div>
-            <div className="px-8">
-              <h1 className="text-xl md:text-2xl font-semibold">
-                The evolution of teaching tools in the 21st century
-              </h1>
-            </div>
-            <div className="px-8">
-              <p className="text-md md:text-lg font-semibold text-[gray] leading-8">
-                Lorem ipsum dolor sit amet consectetur. Enim turpis feugiat
-                elementum sit ut. Cras mattis aliquam arcu mauris sagittis fames
-                eu diam vulputate.
-              </p>
-            </div>
-          </div>
+          </NavLink>
           <div
             data-aos="fade-up"
             className="flex flex-col justify-center items-start gap-4 pb-10 shadow-2xl"

@@ -75,6 +75,7 @@ function Navbar() {
 
   useEffect(() => {
     setMenuShow1(false);
+    setMenuShow2(false);
     setSideBar(false);
     setBtnRotate(false);
     setCarts(false);
@@ -85,7 +86,6 @@ function Navbar() {
     // navbar start
     <>
       <div
-        data-aos="fade-down"
         className={`
           
           ${navbar ? "bg-main-color-1" : "bg-transparent"}
@@ -143,7 +143,10 @@ function Navbar() {
                               FINANCE
                             </h1>
                             <p className="hover:text-main-color-2 text-xs duration-300 cursor-pointer w-[220px] text-gray-500 leading-5">
-                              Understanding corporate finance and investments
+                              <NavLink to="course/finance">
+                                {" "}
+                                Understanding corporate finance and investments
+                              </NavLink>
                             </p>
                           </div>
                           <div className="flex flex-col gap-2">
@@ -151,7 +154,10 @@ function Navbar() {
                               DESIGN
                             </h1>
                             <p className="hover:text-main-color-2 text-xs duration-300 cursor-pointer w-[220px] text-gray-500 leading-5">
-                              Advanced photoshop techniques for designers
+                              <NavLink to="course/design">
+                                {" "}
+                                Advanced photoshop techniques for designers
+                              </NavLink>
                             </p>
                           </div>
                           <div className="flex flex-col gap-2">
@@ -159,7 +165,10 @@ function Navbar() {
                               MANAGEMENT
                             </h1>
                             <p className="hover:text-main-color-2 text-xs duration-300 cursor-pointer w-[220px] text-gray-500 leading-5">
-                              Crisis management and problem-solving strategies
+                              <NavLink to="course/management">
+                                {" "}
+                                Crisis management and problem-solving strategies{" "}
+                              </NavLink>
                             </p>
                           </div>
                           <div className="flex flex-col gap-2">
@@ -167,7 +176,9 @@ function Navbar() {
                               DEVELOPMENT
                             </h1>
                             <p className="hover:text-main-color-2 text-xs duration-300 cursor-pointer w-[220px] text-gray-500 leading-5">
-                              Building single page applications with angular
+                              <NavLink to="course/development">
+                                Building single page applications with angular
+                              </NavLink>
                             </p>
                           </div>
                         </div>

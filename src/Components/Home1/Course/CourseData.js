@@ -14,6 +14,7 @@ export const CourseData1 = [
     btn2: "8k Enrolled",
     img: card7,
     badge: "Free",
+    link: "/denied",
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ export const CourseData1 = [
     btn2: "25k Enrolled",
     img: card8,
     badge: "Free",
+    link: "/denied",
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export const CourseData1 = [
     btn2: "23k Enrolled",
     img: card9,
     badge: "Free",
+    link: "/denied",
   },
   {
     id: 4,
@@ -41,6 +44,7 @@ export const CourseData1 = [
     btn2: "7k Enrolled",
     img: card10,
     badge: "59$",
+    link: "/denied",
   },
   {
     id: 5,
@@ -50,6 +54,7 @@ export const CourseData1 = [
     btn2: "7k Enrolled",
     img: card11,
     badge: "49$",
+    link: "/course/finance",
   },
   {
     id: 6,
@@ -59,5 +64,6 @@ export const CourseData1 = [
     btn2: "7k Enrolled",
     img: card3,
     badge: "72$",
+    link: "/denied",
   },
 ];

@@ -10,6 +10,7 @@ import { CourseData1 } from "./courseData";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { NavLink } from "react-router-dom";
 
 function Course() {
   const [showBtn, setShowBtn] = useState(null);
@@ -117,13 +118,15 @@ function Course() {
                 onMouseLeave={() => setShowBtn(null)}
                 className="relative group hover:shadow-boxShadow cursor-pointer duration-500 w-[90vw] md:w-[100%] lg:w-[100%] pb-5 bg-white flex flex-col gap-7"
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={data.img}
-                    className="w-full h-64 group-hover:scale-110 duration-1000"
-                    alt=""
-                  />
-                </div>
+                <NavLink to={data.link}>
+                  <div className="overflow-hidden">
+                    <img
+                      src={data.img}
+                      className="w-full h-64 group-hover:scale-110 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                </NavLink>
                 <div className="absolute top-56 right-8 group-hover:scale-125 duration-1000 bg-[#254edb] text-white py-6 px-5 font-medium rounded-full">
                   {data.badge}
                 </div>
@@ -165,15 +168,17 @@ function Course() {
                 key={data.id}
                 onMouseOver={() => setShowBtn(data.id)}
                 onMouseLeave={() => setShowBtn(null)}
-                className="relative group hover:shadow-boxShadow cursor-pointer duration-500 w-[90vw] md:w-[100%] lg:w-[100%] xl:w-[440px] pb-5 bg-white flex flex-col gap-7"
+                className="relative group hover:shadow-boxShadow cursor-pointer duration-500 w-[90vw] md:w-[100%] lg:w-[100%] pb-5 bg-white flex flex-col gap-7"
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={data.img}
-                    className="w-full h-72 group-hover:scale-110 duration-1000"
-                    alt=""
-                  />
-                </div>
+                <NavLink to={data.link}>
+                  <div className="overflow-hidden">
+                    <img
+                      src={data.img}
+                      className="w-full h-72 group-hover:scale-110 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                </NavLink>
                 <div className="absolute top-60 right-8 group-hover:scale-125 duration-1000 bg-[#254edb] text-white py-6 px-5 font-medium rounded-full">
                   {data.badge}
                 </div>

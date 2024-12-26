@@ -173,48 +173,8 @@ function Signup() {
                 </div>
               </div>
             </form>
-            {/* <div className="flex justify-center items-center gap-5">
-              <div className="w-28 h-[1.5px] bg-gray-500"></div>
-              <div className="text-white text-lg font-semibold">Test Login</div>
-              <div className="w-28 h-[1.5px] bg-gray-500"></div>
-            </div> */}
           </div>
         </div>
-        {/* <div className="w-full h-[1px] bg-gray-600"></div>
-        <div className="flex justify-between items-start mt-5 flex-wrap">
-          <div className="flex justify-start items-center gap-7">
-            <p className="text-white text-sm cursor-pointer font-semibold hover:text-main-color-2 duration-200">
-              STYLE GUIDE
-            </p>
-            <p className="text-white text-sm cursor-pointer font-semibold hover:text-main-color-2 duration-200">
-              PASSWORD PROTECTED
-            </p>
-            <p className="text-white text-sm cursor-pointer font-semibold hover:text-main-color-2 duration-200">
-              404
-            </p>
-            <p className="text-white text-sm cursor-pointer font-semibold hover:text-main-color-2 duration-200">
-              LICENSE
-            </p>
-          </div>
-          <div className="text-white text-md font-semibold flex flex-col justify-center items-center">
-            <p>Test user: pbsyousufzoydreaminghigh@gmail.com</p>
-            <p>Password: 12345</p>
-          </div>
-          <div className="flex justify-start items-center gap-7">
-            <p className="text-white text-sm font-semibold ">
-              DESIGN BY{" "}
-              <span className="hover:text-main-color-2 cursor-pointer duration-200">
-                M SAHEL YOUSUFZOY
-              </span>
-            </p>
-            <p className="text-white text-sm font-semibold">
-              POWERED BY{" "}
-              <span className="hover:text-main-color-2 cursor-pointer duration-200">
-                UPSKILL
-              </span>
-            </p>
-          </div>
-        </div> */}
       </div>
     </div>
   );

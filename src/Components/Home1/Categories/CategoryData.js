@@ -18,6 +18,7 @@ export const CategoryData1 = [
     btn2: "8k Enrolled",
     img: card1,
     badge: "Free",
+    link: "/course/management",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ export const CategoryData1 = [
     btn2: "25k Enrolled",
     img: card2,
     badge: "Free",
+    link: "/course/design",
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ export const CategoryData1 = [
     btn2: "23k Enrolled",
     img: card3,
     badge: "Free",
+    link: "/course/finance",
   },
   {
     id: 4,
@@ -45,6 +48,7 @@ export const CategoryData1 = [
     btn2: "7k Enrolled",
     img: card4,
     badge: "59$",
+    link: "/denied",
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ export const CategoryData1 = [
     btn2: "7k Enrolled",
     img: card5,
     badge: "49$",
+    link: "/denied",
   },
   {
     id: 6,
@@ -63,6 +68,7 @@ export const CategoryData1 = [
     btn2: "7k Enrolled",
     img: card6,
     badge: "72$",
+    link: "/denied",
   },
 ];
 export const CategoryData2 = [
@@ -74,6 +80,7 @@ export const CategoryData2 = [
     btn2: "25k Enrolled",
     img: card7,
     badge: "99$",
+    link: "/denied",
   },
   {
     id: 2,
@@ -83,6 +90,7 @@ export const CategoryData2 = [
     btn2: "25k Enrolled",
     img: card8,
     badge: "79$",
+    link: "denied",
   },
   {
     id: 3,
@@ -92,6 +100,7 @@ export const CategoryData2 = [
     btn2: "25k Enrolled",
     img: card2,
     badge: "Free",
+    link: "course/design",
   },
 ];
 
@@ -104,6 +113,7 @@ export const CategoryData3 = [
     btn2: "25k Enrolled",
     img: card9,
     badge: "Free",
+    link: "course/development",
   },
   {
     id: 2,
@@ -113,6 +123,7 @@ export const CategoryData3 = [
     btn2: "25k Enrolled",
     img: card4,
     badge: "59$",
+    link: "denied",
   },
   {
     id: 3,
@@ -122,6 +133,7 @@ export const CategoryData3 = [
     btn2: "25k Enrolled",
     img: card10,
     badge: "72$",
+    link: "denied",
   },
 ];
 export const CategoryData4 = [
@@ -133,6 +145,7 @@ export const CategoryData4 = [
     btn2: "25k Enrolled",
     img: card5,
     badge: "49$",
+    link: "denied",
   },
   {
     id: 2,
@@ -142,6 +155,7 @@ export const CategoryData4 = [
     btn2: "25k Enrolled",
     img: card11,
     badge: "39$",
+    link: "denied",
   },
 ];
 export const CategoryData5 = [
@@ -153,6 +167,7 @@ export const CategoryData5 = [
     btn2: "25k Enrolled",
     img: card3,
     badge: "Free",
+    link: "course/finance",
   },
   {
     id: 2,
@@ -162,5 +177,36 @@ export const CategoryData5 = [
     btn2: "25k Enrolled",
     img: card11,
     badge: "99$",
+    link: "denied",
+  },
+];
+import blog4 from "../../../assets/images/Home1/66e93b2410f6e96cbbc70c8d_Blog Small Thumbnail.webp";
+import blog5 from "../../../assets/images/Home1/66e93b734e839a98823ff445_Blog Small Thumbnail-3.webp";
+import blog6 from "../../../assets/images/Home1/66e93bf4c8aeb4955eb8be4c_Blog Small Thumbnail-2.webp";
+
+export const CategoryData6 = [
+  {
+    id: 1,
+    img: blog4,
+    title: "DEVELOPMENT",
+    desc: "Master online learning with proven strategies",
+    date: "October 4, 2024",
+    link: "/blog/blog1",
+  },
+  {
+    id: 2,
+    img: blog5,
+    title: "TEACHING",
+    desc: "How to enhance your learning experience today",
+    date: "October 3, 2024",
+    link: "/blog/blog3",
+  },
+  {
+    id: 3,
+    img: blog6,
+    title: "DEVELOPMENT",
+    desc: "The evolution of teaching tools in the 21st century",
+    date: "September 17, 2024",
+    link: "/blog/blog2",
   },
 ];

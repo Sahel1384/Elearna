@@ -21,6 +21,7 @@ import {
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { NavLink } from "react-router-dom";
 
 function Category() {
   useEffect(() => {
@@ -62,65 +63,79 @@ function Category() {
             Discover leading categories to elevate your journey
           </h1>
         </div>
+
         <div
           data-aos="fade-up"
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-center items-center gap-3 xl:gap-8"
         >
-          <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
-            <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
-              <img src={cat1} alt="" />
+          <NavLink to="category/design">
+            <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
+              <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
+                <img src={cat1} alt="" />
+              </div>
+              <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[70%] text-center">
+                Creative web design
+              </h1>
+              <p className="text-[#a6a5a5] text-md font-semibold">8 Courses</p>
             </div>
-            <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[70%] text-center">
-              Creative web design
-            </h1>
-            <p className="text-[#a6a5a5] text-md font-semibold">8 Courses</p>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
-            <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
-              <img src={cat2} alt="" />
+          </NavLink>
+          <NavLink to="category/finance">
+            <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
+              <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
+                <img src={cat2} alt="" />
+              </div>
+              <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
+                Finance accounting
+              </h1>
+              <p className="text-[#a6a5a5] font-semibold">10 Courses</p>
             </div>
-            <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
-              Finance accounting
-            </h1>
-            <p className="text-[#a6a5a5] font-semibold">10 Courses</p>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
-            <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
-              <img src={cat1} alt="" />
+          </NavLink>
+          <NavLink to="category/development">
+            <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
+              <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
+                <img src={cat1} alt="" />
+              </div>
+              <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
+                IT and software
+              </h1>
+              <p className="text-[#a6a5a5] font-semibold">5 Courses</p>
             </div>
-            <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
-              IT and software
-            </h1>
-            <p className="text-[#a6a5a5] font-semibold">5 Courses</p>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
-            <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
-              <img src={cat3} alt="" />
+          </NavLink>
+          <NavLink to="category/finance">
+            <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
+              <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
+                <img src={cat3} alt="" />
+              </div>
+              <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
+                Digital marketing
+              </h1>
+              <p className="text-[#a6a5a5] font-semibold">4 Courses</p>
             </div>
-            <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
-              Digital marketing
-            </h1>
-            <p className="text-[#a6a5a5] font-semibold">4 Courses</p>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
-            <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
-              <img src={cat4} alt="" />
+          </NavLink>
+          <NavLink to="category/development">
+            <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
+              <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
+                <img src={cat4} alt="" />
+              </div>
+              <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
+                Web development
+              </h1>
+              <p className="text-[#a6a5a5] font-semibold">8 Courses</p>
             </div>
-            <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
-              Web development
-            </h1>
-            <p className="text-[#a6a5a5] font-semibold">8 Courses</p>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
-            <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
-              <img src={cat5} alt="" />
+          </NavLink>
+          <NavLink to="category/design">
+            <div className="flex flex-col justify-center items-center gap-3 py-7 border rounded-md w-[90vw] sm:w-[45vw] md:w-[30vw] lg:w-[100%] xl:w-[165px] cursor-pointer duration-300 lg:hover:shadow-boxShadow">
+              <div className="bg-[#edf7f9] px-4 py-4 rounded-full">
+                <img src={cat5} alt="" />
+              </div>
+              <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
+                Content writing
+              </h1>
+              <p className="text-[#a6a5a5] font-semibold">3 Courses</p>
             </div>
-            <h1 className="text-[18px] lg:text-[16px] xl:text-[17px] font-bold w-[100%] lg:w-[60%] text-center">
-              Content writing
-            </h1>
-            <p className="text-[#a6a5a5] font-semibold">3 Courses</p>
-          </div>
+          </NavLink>
         </div>
+
         <div className="relative w-full px-5 flex-col md:flex-row flex items-center justify-start gap-8">
           <div
             data-aos="fade-up"
@@ -206,13 +221,15 @@ function Category() {
                 onMouseLeave={() => setShowBtn(null)}
                 className="relative group h-auto hover:shadow-boxShadow cursor-pointer duration-500 w-[90vw] md:w-[100%] lg:w-[100%] pb-5 bg-white flex flex-col gap-7"
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={data.img}
-                    className="w-full h-64 group-hover:scale-110 duration-1000"
-                    alt=""
-                  />
-                </div>
+                <NavLink to={data.link}>
+                  <div className="overflow-hidden">
+                    <img
+                      src={data.img}
+                      className="w-full h-64 group-hover:scale-110 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                </NavLink>
                 <div className="absolute top-56 right-8 group-hover:scale-125 duration-1000 bg-[#254edb] text-white py-5 px-4 font-medium rounded-full">
                   {data.badge}
                 </div>
@@ -251,13 +268,15 @@ function Category() {
                 onMouseLeave={() => setShowBtn(null)}
                 className="relative group hover:shadow-boxShadow cursor-pointer duration-500 w-[90vw] md:w-[100%] lg:w-[100%] pb-5 bg-white flex flex-col gap-7"
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={data.img}
-                    className="w-full h-64 group-hover:scale-110 duration-1000"
-                    alt=""
-                  />
-                </div>
+                <NavLink to={data.link}>
+                  <div className="overflow-hidden">
+                    <img
+                      src={data.img}
+                      className="w-full h-64 group-hover:scale-110 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                </NavLink>
                 <div className="absolute top-56 right-8 group-hover:scale-125 duration-1000 bg-[#254edb] text-white py-[17.5px] px-4 font-medium rounded-full">
                   {data.badge}
                 </div>
@@ -301,13 +320,15 @@ function Category() {
                 onMouseLeave={() => setShowBtn(null)}
                 className="relative group hover:shadow-boxShadow cursor-pointer duration-500 w-[90vw] md:w-[100%] lg:w-[100%] pb-5 bg-white flex flex-col gap-7"
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={data.img}
-                    className="w-full h-64 group-hover:scale-110 duration-1000"
-                    alt=""
-                  />
-                </div>
+                <NavLink to={data.link}>
+                  <div className="overflow-hidden">
+                    <img
+                      src={data.img}
+                      className="w-full h-64 group-hover:scale-110 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                </NavLink>
                 <div className="absolute top-56 right-8 group-hover:scale-125 duration-1000 bg-[#254edb] text-white py-[17.5px] px-4 font-medium rounded-full">
                   {data.badge}
                 </div>
@@ -351,13 +372,15 @@ function Category() {
                 onMouseLeave={() => setShowBtn(null)}
                 className="relative group hover:shadow-boxShadow cursor-pointer duration-500 w-[90vw] md:w-[100%] lg:w-[100%] pb-5 bg-white flex flex-col gap-7"
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={data.img}
-                    className="w-full h-64 group-hover:scale-110 duration-1000"
-                    alt=""
-                  />
-                </div>
+                <NavLink to={data.link}>
+                  <div className="overflow-hidden">
+                    <img
+                      src={data.img}
+                      className="w-full h-64 group-hover:scale-110 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                </NavLink>
                 <div className="absolute top-56 right-8 group-hover:scale-125 duration-1000 bg-[#254edb] text-white py-[17.5px] px-4 font-medium rounded-full">
                   {data.badge}
                 </div>
@@ -401,13 +424,15 @@ function Category() {
                 onMouseLeave={() => setShowBtn(null)}
                 className="relative group hover:shadow-boxShadow cursor-pointer duration-500 w-[90vw] md:w-[100%] lg:w-[100%] pb-5 bg-white flex flex-col gap-7"
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={data.img}
-                    className="w-full h-64 group-hover:scale-110 duration-1000"
-                    alt=""
-                  />
-                </div>
+                <NavLink to={data.link}>
+                  <div className="overflow-hidden">
+                    <img
+                      src={data.img}
+                      className="w-full h-64 group-hover:scale-110 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                </NavLink>
                 <div className="absolute top-56 right-8 group-hover:scale-125 duration-1000 bg-[#254edb] text-white py-[17.5px] px-4 font-medium rounded-full">
                   {data.badge}
                 </div>
