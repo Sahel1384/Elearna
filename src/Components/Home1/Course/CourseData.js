@@ -5,6 +5,7 @@ import card8 from "../../../assets/images/Home1/course.webp";
 import card9 from "../../../assets/images/Home1/66eb9dfb3e87f8984b5a15b6_Course Small Image-p-800.webp";
 import card10 from "../../../assets/images/Home1/66ff6a72dd07492f0cbb0a6d_Blog Small Thumbnail-10-p-500.webp";
 import card11 from "../../../assets/images/Home1/6710bcf4976ba1d072d8b476_Course Image-4-2-p-800.webp";
+
 export const CourseData1 = [
   {
     id: 1,
